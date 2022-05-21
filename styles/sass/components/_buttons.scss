@@ -1,0 +1,68 @@
+@use "../abstracts/"as *;
+
+.btn {
+    position: relative;
+    color: var(--clr-white);
+    background-color: transparent;
+    padding: .7em 2em;
+    border: none;
+    border-radius: var(--br-900);
+    box-shadow: inset 0px 0px 0px 2px var(--clr-white);
+    white-space: nowrap;
+    text-transform: capitalize;
+    font-weight: var(--fw-700);
+    overflow: hidden;
+    transition: color .1s .2s ease-in-out;
+    @include flex(1rem);
+
+
+    &:hover {
+        color: var(--clr-primary);
+    }
+
+    &:hover &__wave {
+        top: 0;
+    }
+
+
+
+    &__prep {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__body {
+        @extend .btn__prep;
+    }
+
+    &__wave {
+        @include abs-position(calc(100% + 25px), 0);
+        width: 100%;
+        height: 100%;
+        background-color: var(--clr-white);
+        transition: 1s;
+
+        &::after {
+            @include pseudo;
+            width: 100%;
+            height: 45px;
+            top: -45px;
+            background: url(/assets/General/wave.png);
+            background-size: 100%;
+            animation: wave .5s linear infinite;
+        }
+    }
+
+}
+
+
+
+@keyframes wave {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: 190.933px;
+    }
+}
