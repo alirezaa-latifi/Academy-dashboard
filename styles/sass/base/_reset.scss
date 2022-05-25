@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;900&display=swap');
 
 :root {
-    --clr-bg-main: #FBFBFB;
+    --clr-bg-main: #f7f7f7;
     --clr-white: #fff;
-    --clr-text-dark: #414141;
-    --clr-text-grey: #C9C9C9;
+
+    --clr-text-darker: #414141;
+    --clr-text-dark: #3d3d3d;
+    --clr-text-darkgrey: #6e6e6e;
+    --clr-text-grey: #a0a0a0;
+
     --clr-purple-400: #8A6FD6;
     --clr-purple-300: #E9E3FD;
     --clr-orange-400: #FDAB5F ;
-    --clr-orange-400: #FEF1E1 ;
+    --clr-orange-300: #FEF1E1 ;
     --clr-blue-400: #579BE4;
     --clr-blue-300: #E6F4FF ;
 
@@ -23,11 +27,13 @@
 
     --fw-900: 900;
     --fw-700: 700;
-    --fw-600:600;
+    --fw-600: 600;
     --fw-400: 400;
     --fw-300: 300;
 
-    --br-circle: 3rem;
+    --br-circle: 10rem;
+    --br-600: 1.5rem;
+    --br-500: 1rem;
     --br-400: .5rem;   
 }
 

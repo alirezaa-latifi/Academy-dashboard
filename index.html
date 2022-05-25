@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +13,208 @@
     <!-- Fontawsome Kit -->
     <script src="https://kit.fontawesome.com/660edb983a.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <!-- header start -->
 
-    <!-- header end -->
-    
+<body>
+
+    <div class="container wrapper">
+        <!-- header start -->
+        <header class="header">
+            <a href="#"><img src="assets/Web Study Dashboard Logo.png" alt="Academy Logo" class="header__logo"></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--active"><i
+                                class="fa fa-home fa-lg"></i> dashboard</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link"><i class="fa fa-home fa-lg"></i> courses</a>
+                    </li>
+                    <li class="nav__item"><a href="#" class="nav__link"><i class="fa fa-home fa-lg"></i> chats</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link"><i class="fa fa-home fa-lg"></i> grades</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link"><i class="fa fa-home fa-lg"></i> schedule</a>
+                    </li>
+                    <li class="nav__item"><a href="#" class="nav__link"><i class="fa fa-gear fa-lg"></i> setting</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__action">
+                <img class="header__action-img" src="assets/working.png" alt="user vector">
+                <h3 class="header__action-title">Premium subscription</h3>
+                <p class="header__action-desc">Buy Premium and get access to new courses</p>
+                <a class="btn btn--purple" href="#">More detailed</a>
+            </div>
+        </header>
+        <!-- header end -->
+
+
+        <!-- main start -->
+        <main class="main">
+            <div class="main__content">
+                <header class="main__header">
+                    <h1 class="main__header-title">Dashboard</h1>
+                    <label class="main__header-search" for="">
+                        <i class="fa fa-search main__header-search-icon"></i>
+                        <input class="main__header-search-input" type="search" placeholder="Search">
+                    </label>
+                    <button class="btn btn--secondary">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+                </header>
+
+                <section class="new-courses">
+                    <h2 class="main__subtitle">new courses</h2>
+                    <div class="new-courses__cards">
+                        <div class="course-card course-card--orange">
+                            <img src="assets/card-1.png" alt="map vector"
+                                class="course-card__img course-card__img--orange ">
+                            <h3 class="course-card__title">Geography</h3>
+                            <p class="course-card__desc">12 Lessons</p>
+                            <div class="course-card__footer">
+                                <div class="course-card__avatars">
+                                    <a href="#"><img src="assets/avt-1.jpg" alt="user avatar"
+                                            class="course-card__avatar"></a>
+                                    <a href="#"><img src="assets/avt-2.jpg" alt="user avatar"
+                                            class="course-card__avatar"></a>
+                                    <a href="#"><img src="assets/avt-3.jpg" alt="user avatar"
+                                            class="course-card__avatar"></a>
+                                </div>
+                                <a href="#" class="btn btn--orange btn--course-card"><i
+                                        class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="course-card course-card--purple">
+                            <img src="assets/card-2.png" alt="web wector"
+                                class="course-card__img course-card__img--purple">
+                            <h3 class="course-card__title">Geography</h3>
+                            <p class="course-card__desc">12 Lessons</p>
+                            <div class="course-card__footer">
+                                <div class="course-card__avatars">
+                                    <a href="#"><img src="assets/avt-1.jpg" alt="user avatar"
+                                            class="course-card__avatar"></a>
+                                    <a href="#"><img src="assets/avt-2.jpg" alt="user avatar"
+                                            class="course-card__avatar"></a>
+                                    <a href="#"><img src="assets/avt-3.jpg" alt="user avatar"
+                                            class="course-card__avatar"></a>
+                                </div>
+                                <a href="#" class="btn btn--purple btn--course-card"><i
+                                        class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="course-card course-card--blue">
+                            <img src="assets/card-3.png" alt="image vector"
+                                class="course-card__img course-card__img--blue">
+                            <h3 class="course-card__title">Geography</h3>
+                            <p class="course-card__desc">12 Lessons</p>
+                            <div class="course-card__footer">
+                                <div class="course-card__avatars">
+                                    <a href="#"><img src="assets/avt-1.jpg" alt="user avatar"
+                                            class="course-card__avatar"></a>
+                                    <a href="#"><img src="assets/avt-2.jpg" alt="user avatar"
+                                            class="course-card__avatar"></a>
+                                    <a href="#"><img src="assets/avt-3.jpg" alt="user avatar"
+                                            class="course-card__avatar"></a>
+                                </div>
+                                <a href="#" class="btn btn--blue btn--course-card"><i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="my-courses">
+                    <div class="my-courses__top">
+                        <h2 class="main__subtitle">my courses</h2>
+                        <a class="btn btn--simple" href="#">View All</a>
+                    </div>
+                    <table class="course-table">
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Date</th>
+                            <th>Rate</th>
+                            <th>Level</th>
+                        </tr>
+                        <tr>
+                            <td class="course-table__course">
+                                <i class="fa fa-angle-right"></i>
+                                <div>
+                                    <h4>Web Design</h4>
+                                    <p>10 Lessons</p>
+                                </div>
+                            </td>
+                            <td>May 14</td>
+                            <td>4.8</td>
+                            <td>Elementary</td>
+                        </tr>
+                        <tr>
+                            <td class="course-table__course">
+                                <i class="fa fa-angle-right"></i>
+                                <div>
+                                    <h4>Web Design</h4>
+                                    <p>10 Lessons</p>
+                                </div>
+                            </td>
+                            <td>May 14</td>
+                            <td>4.8</td>
+                            <td>Elementary</td>
+                        </tr>
+                        <tr>
+                            <td class="course-table__course">
+                                <i class="fa fa-angle-right"></i>
+                                <div>
+                                    <h4>Web Design</h4>
+                                    <p>10 Lessons</p>
+                                </div>
+                            </td>
+                            <td>May 14</td>
+                            <td>4.8</td>
+                            <td>Elementary</td>
+                        </tr>
+                    </table>
+
+                </section>
+            </div>
+            <section class="sidebar">
+                <div class="profile">
+                    <div class="profile__top">
+                        <h2 class="profile__title">profile</h2>
+                        <button class="btn btn--secondary"><i class="fa-solid fa-pen"></i></button>
+                    </div>
+                    <div class="profile__user">
+                        <img class="profile__avatar" src="assets/avt-2.jpg" alt="user avatar">
+                        <h3 class="profile__name">Alireza Latifi <i class="fa-solid fa-check"></i></h3>
+                        <p class="profile__user-level">Elementary</p>
+                    </div>
+                </div>
+                <!-- <div class="calender"></div> -->
+                <div class="progress">
+                    <h2 class="progress__title">Homework progress</h2>
+                    <div class="progress-card">
+                        <div class="progress-card__bar">50%</div>
+                        <div>
+                            <h3 class="progress-card__title">Styling with CSS</h3>
+                            <p class="progress-card__desc">12 tasks</p>
+                        </div>
+                        <a href="#" class="progress-card__action"><i class="fa-solid fa-angle-right fa-lg"></i></a>
+                    </div>
+                    <div class="progress-card">
+                        <div class="progress-card__bar">50%</div>
+                        <div>
+                            <h3 class="progress-card__title">Styling with CSS</h3>
+                            <p class="progress-card__desc">12 tasks</p>
+                        </div>
+                        <a href="#" class="progress-card__action"><i class="fa-solid fa-angle-right fa-lg"></i></a>
+                    </div>
+                    <div class="progress-card">
+                        <div class="progress-card__bar">50%</div>
+                        <div>
+                            <h3 class="progress-card__title">Styling with CSS</h3>
+                            <p class="progress-card__desc">12 tasks</p>
+                        </div>
+                        <a href="#" class="progress-card__action"><i class="fa-solid fa-angle-right fa-lg"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- main end -->
+
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,28 @@
+@use  "../abstracts/" as *;
+
+.progress-card {
+    @include flex(3rem, null, flex-start, center);
+    background-color: var(--clr-white);
+    padding: 1.5rem 3rem;
+    border-radius: var(--br-500);
+
+
+
+    &__bar {}
+
+
+    &__desc {
+        color: var(--clr-text-grey);
+        font-weight: var(--fw-600);
+    }
+
+    &__action {
+        margin-left: auto;
+        color: var(--clr-purple-400);
+    }
+}
+
+
+.progress-card + .progress-card {
+    margin-top: 1rem;
+}

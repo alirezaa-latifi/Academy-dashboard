@@ -1,68 +1,72 @@
 @use "../abstracts/"as *;
 
+
 .btn {
-    position: relative;
-    color: var(--clr-white);
-    background-color: transparent;
-    padding: .7em 2em;
+    display: grid;
+    place-items: center;
+    padding: 1.2rem;
+    border-radius: var(--br-500);
     border: none;
-    border-radius: var(--br-900);
-    box-shadow: inset 0px 0px 0px 2px var(--clr-white);
-    white-space: nowrap;
-    text-transform: capitalize;
+    transition: all .2s ease-in-out;
     font-weight: var(--fw-700);
-    overflow: hidden;
-    transition: color .1s .2s ease-in-out;
-    @include flex(1rem);
+    text-align: center;
 
+    &--purple {
+        color: white;
+        background-color: var(--clr-purple-400);
 
-    &:hover {
-        color: var(--clr-primary);
-    }
-
-    &:hover &__wave {
-        top: 0;
-    }
-
-
-
-    &__prep {
-        position: relative;
-        z-index: 2;
-    }
-
-    &__body {
-        @extend .btn__prep;
-    }
-
-    &__wave {
-        @include abs-position(calc(100% + 25px), 0);
-        width: 100%;
-        height: 100%;
-        background-color: var(--clr-white);
-        transition: 1s;
-
-        &::after {
-            @include pseudo;
-            width: 100%;
-            height: 45px;
-            top: -45px;
-            background: url(/assets/General/wave.png);
-            background-size: 100%;
-            animation: wave .5s linear infinite;
+        &:hover,
+        &:focus {
+            box-shadow: inset 0 0 0 1px var(--clr-purple-400);
+            color: var(--clr-purple-400);
+            background-color: white;
         }
     }
 
-}
+    &--orange {
+        color: white;
+        background-color: var(--clr-orange-400);
 
-
-
-@keyframes wave {
-    from {
-        background-position-x: 0;
+        &:hover,
+        &:focus {
+            box-shadow: inset 0 0 0 1px var(--clr-orange-400);
+            color: var(--clr-orange-400);
+            background-color: white;
+        }
     }
 
-    to {
-        background-position-x: 190.933px;
+    &--blue {
+        color: white;
+        background-color: var(--clr-blue-400);
+
+        &:hover,
+        &:focus {
+            box-shadow: inset 0 0 0 1px var(--clr-blue-400);
+            color: var(--clr-blue-400);
+            background-color: white;
+        }
     }
+
+    &--secondary {
+       
+        background-color: var(--clr-white);
+        color: var(--clr-text-darkgrey);
+
+        &:hover,
+        &:focus {
+            background-color: rgb(240, 240, 240);
+
+        }
+    }
+
+
+    &--simple {
+        color: var(--clr-purple-400); 
+       
+        &:hover,
+        &:focus {
+            box-shadow: inset 0 -3px 0 0 var(--clr-purple-300);
+        }
+    }
+
 }
