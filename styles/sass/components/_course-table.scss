@@ -2,17 +2,20 @@
 
 .course-table {
     width: 100%;
+    text-align: center;
 
     th {
         color: var(--clr-text-grey);
-        text-align: left;
         padding: 2rem 0;
     }
 
-
+    &__first-col {
+        text-align: left;
+    }
 
     &__course {
-        padding: .5rem 0;
+        padding: 0.5rem 0;
+        text-align: left;
         @include flex(1rem, null, flex-start, center);
 
         i {
@@ -25,10 +28,8 @@
         p {
             color: var(--clr-text-grey);
             font-weight: var(--fw-600);
-            margin-top: .3rem;
+            margin-top: 0.3rem;
         }
-
-
     }
 
     td {

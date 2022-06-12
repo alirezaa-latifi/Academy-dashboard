@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;900&display=swap");
 
 :root {
     --clr-bg-main: #f7f7f7;
@@ -9,12 +9,13 @@
     --clr-text-darkgrey: #6e6e6e;
     --clr-text-grey: #a0a0a0;
 
-    --clr-purple-400: #8A6FD6;
-    --clr-purple-300: #E9E3FD;
-    --clr-orange-400: #FDAB5F ;
-    --clr-orange-300: #FEF1E1 ;
-    --clr-blue-400: #579BE4;
-    --clr-blue-300: #E6F4FF ;
+    --clr-purple-400: #8a6fd6;
+    --clr-purple-300: #eee8ff;
+    --clr-purple-200: #cabdf5;
+    --clr-orange-400: #fdab5f;
+    --clr-orange-300: #fef1e1;
+    --clr-blue-400: #579be4;
+    --clr-blue-300: #e6f4ff;
 
     --fs-900: 5.6rem;
     --fs-800: 3.6rem;
@@ -34,10 +35,10 @@
     --br-circle: 10rem;
     --br-600: 1.5rem;
     --br-500: 1rem;
-    --br-400: .5rem;   
+    --br-400: 0.5rem;
 }
 
-html {      
+html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
@@ -59,9 +60,8 @@ body {
     min-height: 100vh;
     font-size: var(--fs-400);
     line-height: 1.5;
-    font-family: 'Urbanist', sans-serif;
+    font-family: "Urbanist", sans-serif;
 }
-
 
 img {
     max-width: 100%;

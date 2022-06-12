@@ -46,7 +46,7 @@
 
         <!-- main start -->
         <main class="main">
-            <div class="main__content">
+            <div class="main__content main__content--active">
                 <header class="main__header">
                     <h1 class="main__header-title">Dashboard</h1>
                     <label class="main__header-search" for="">
@@ -123,13 +123,13 @@
                     </div>
                     <table class="course-table">
                         <tr>
-                            <th>Course Name</th>
+                            <th class="course-table__first-col">Course Name</th>
                             <th>Date</th>
                             <th>Rate</th>
                             <th>Level</th>
                         </tr>
                         <tr>
-                            <td class="course-table__course">
+                            <td class="course-table__course ">
                                 <i class="fa fa-angle-right"></i>
                                 <div>
                                     <h4>Web Design</h4>
@@ -168,6 +168,22 @@
 
                 </section>
             </div>
+            <div class="main__content main__content--empty">
+                <img src="assets/tab-1.png" alt="">
+            </div>
+            <div class="main__content main__content--empty">
+                <img src="assets/tab-2.png" alt="">
+            </div>
+            <div class="main__content main__content--empty">
+                <img src="assets/tab-1.png" alt="">
+            </div>
+            <div class="main__content main__content--empty">
+                <img src="assets/tab-2.png" alt="">
+            </div>
+            <div class="main__content main__content--empty">
+                <img src="assets/tab-1.png" alt="">
+            </div>
+
             <section class="sidebar">
                 <div class="profile">
                     <div class="profile__top">
@@ -180,11 +196,16 @@
                         <p class="profile__user-level">Elementary</p>
                     </div>
                 </div>
-                <!-- <div class="calender"></div> -->
+                <div class="date-picker">
+                    <div id="inline">
+                    </div>
+                </div>
                 <div class="progress">
                     <h2 class="progress__title">Homework progress</h2>
                     <div class="progress-card">
-                        <div class="progress-card__bar">50%</div>
+                        <div class="progress-card__circle progress-card__circle--25">
+                            <span>25%</span>
+                        </div>
                         <div>
                             <h3 class="progress-card__title">Styling with CSS</h3>
                             <p class="progress-card__desc">12 tasks</p>
@@ -192,7 +213,9 @@
                         <a href="#" class="progress-card__action"><i class="fa-solid fa-angle-right fa-lg"></i></a>
                     </div>
                     <div class="progress-card">
-                        <div class="progress-card__bar">50%</div>
+                        <div class="progress-card__circle progress-card__circle--50">
+                            <span>50%</span>
+                        </div>
                         <div>
                             <h3 class="progress-card__title">Styling with CSS</h3>
                             <p class="progress-card__desc">12 tasks</p>
@@ -200,7 +223,9 @@
                         <a href="#" class="progress-card__action"><i class="fa-solid fa-angle-right fa-lg"></i></a>
                     </div>
                     <div class="progress-card">
-                        <div class="progress-card__bar">50%</div>
+                        <div class="progress-card__circle progress-card__circle--65">
+                            <span>65%</span>
+                        </div>
                         <div>
                             <h3 class="progress-card__title">Styling with CSS</h3>
                             <p class="progress-card__desc">12 tasks</p>
@@ -214,6 +239,7 @@
 
     </div>
 
+    <script src="calender.js"></script>
     <script src="script.js"></script>
 </body>
 
