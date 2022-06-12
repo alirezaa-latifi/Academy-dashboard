@@ -3,11 +3,17 @@
     margin: 0 auto;
 }
 
-
 .wrapper {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: calc(100vh - 6rem);
     gap: 2rem;
     padding: 3rem 0;
+}
+
+.image-wrapper {
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    border-radius: var(--br-500);
 }

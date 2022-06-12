@@ -99,6 +99,13 @@ button {
   padding: 3rem 0;
 }
 
+.image-wrapper {
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  border-radius: var(--br-500);
+}
+
 .btn {
   display: grid;
   place-items: center;
@@ -154,6 +161,12 @@ button {
   padding: 1.5rem;
   border-radius: var(--br-500);
 }
+.course-card:hover, .course-card:focus {
+  cursor: pointer;
+}
+.course-card:hover .course-card__img, .course-card:focus .course-card__img {
+  filter: hue-rotate(110deg);
+}
 .course-card--orange {
   background-color: var(--clr-orange-300);
 }
@@ -165,7 +178,7 @@ button {
 }
 .course-card__img {
   border-radius: var(--br-500);
-  margin-bottom: 1rem;
+  transition: all 0.2s ease-in-out;
 }
 .course-card__img--orange {
   background-color: var(--clr-orange-400);
